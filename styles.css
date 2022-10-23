@@ -1,20 +1,46 @@
-#first-card.mat-card{
+.mat-card#first-card{
 
     padding: 0;
 }
 
 .mat-card {
-border-radius: 32px;
-margin: 10px 10px;
-padding: 20px;
+border-radius: 1.66vw;
+margin: 1.04vw 7.8vw;
+padding: 1.3vw;
 border-color:rgb(0, 0, 0);
+
+}
+
+.info-min{
+	
+	 font-size: clamp(10px, 2vw,20px);
+     align-self: center;
+     vertical-align: baseline;
+	
+	
 }
 
 
-
-.mat-card#first-card {
-padding: 0;
+h1{
+	
+	font-size: clamp(20px, 5.1vw, 50px);
 }
+
+h4{
+	
+	font-size: clamp(10px, 1.7vw, 50px);
+}
+
+h5{
+	
+	font-size: clamp(10px, 2.5vw 30px);
+}
+p{
+	
+	font-size: clamp(14px, 2vw, 22px);
+}
+
+.btn {font-size:clamp(12px, 2vw, 22px);}
 
 div#profile-background{
 
@@ -24,54 +50,155 @@ div#profile-background{
 
 div#profile-background img{
 
-border-radius: 50px;
+border-radius: 1.66vw;
 width:100%;
-border-radius: 30px 30px 0px 0px
+border-radius: 1.56vw 1.56vw 0vw 0vw;
+display:flex;
+
+}
+
+div#info-img {
+ display:flex;
+}
 
 
+div#info-img img{
+     border-radius: 2.60vw;
+    width: 14vw;
+    height: 14vw;
+    margin-top: -7vw;
+    z-index: 1;
+	
+}
+
+
+.secciones-image{
+   
+  
+    width: 4vw;
+    height: 4vw;
+    border-radius: 0.70px;
+    display:flex;
+
+}
+
+
+.secciones-image1{
+   
+  
+    width: 4vw;
+    height: 5vw;
+    border-radius: 0.70px;
+    display:flex;
+	
+}
+.arg-image{
+   
+  
+    
+    width: clamp(20px, 1.56vw,30px);
+    height: clamp(20px, 1.56vw,30px);
+    
+}
+.redes-image{
+   
+  
+   width: clamp(20px, 6.56vw,90px);
+    height: clamp(20px, 1.56vw,40px);
+     margin-top: 0.3vw;
+    
 }
 
 .profile-image{
    
-    border-radius: 50px;
-    width: 152px;
-    height: 152px;
-    margin-top: -110px;
+    border-radius: 2.60vw;
+    width: 7.91vw;
+    height: 7.91vw;
+    margin-top: -5.72vw;
     z-index: 1;
+	display:flex;
+    
 }
+
+.card-title{
+	
+	 display: flex;
+	
+}
+
+.card-title h2{
+
+     font-size: clamp(14px, 5vw,30px);
+  
+ 
+	 }
+	
+	
+.card-body{
+		
+
+align-items: center;
+
+	}
+	
+.card-body	h5{
+
+     font-size: clamp(14px, 2.6vw,30px);
+     align-self: center;
+     vertical-align: baseline;
+	 }
+	
+
 
 div#info-actions{
 
     display: flex;
 }
 
-div#info-data ul#info-details{
 
-    width: 232px;
+
+div#info-data ul#info-details {
+
     list-style:none;
-    flex-shrink: 0;
+    display: inline-block;
+    width: auto;
+    margin: auto;
+    text-align: right;
+    
+
 }
+
 
 
 div#info-data ul#info-details li a{
+
     color:black;
     display: flex;
     text-decoration: none;
+   
+  
 }
+
+
 div#info-data ul#info-details li a h2{
 
-     font-size: 1rem;
-     font-weight: 500;
+     font-size: clamp(10px, 1vw, 30px);
      align-self: center;
      vertical-align: baseline;
+        
 }
+
+
 div#info-data ul#info-details li a img{
       
-    width: 32px;
-    height: 32px;
-    margin-right: 8px;
+    width:clamp(20px, 9vw, 80px);
+    height: clamp(20px, 9vw, 80px);
+    margin-right: 1.04vw;
+    
+ }   
+ 
 
-}
+
 
 ul.items-list{
 
@@ -100,17 +227,159 @@ ul.items-list li div.data-container a{
 }
 
 
-
-
-
-dl, ol, ul {
-
-    margin-top: 0;
-    margin-bottom: 1rem;
+.progress{
+    width: 7.81vw;
+    height: 7.81vw;
+    line-height: 7.81vw;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
 }
-
-ol,ul{
-
-    padding-left: 2rem;
+.progress:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+	 border: 0.78vw solid #f2f5f5;
+   
+    position: absolute;
+    top: 0;
+    left: 0;
 }
-
+.progress > span{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.progress .progress-left{
+    left: 0;
+}
+.progress .progress-bar{
+    border-width: clamp(8px, 1.5vw, 22px);
+    border-style: solid;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: none;
+    top: 0;}
+.progress .progress-left .progress-bar{
+    left: 100%;
+    border-top-right-radius: 4.16vw;
+    border-bottom-right-radius: 4.16vw;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+.progress .progress-right{
+    right: 0;
+}
+.progress .progress-right .progress-bar{
+    left: -100%;
+    border-top-left-radius: 4.16vw;
+    border-bottom-left-radius: 4.16vw;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: loading-1 1.8s linear forwards;
+}
+.progress .progress-value{
+   font-size: clamp(10px, 1.25vw, 22px);
+    color: rgb(250, 245, 245);
+    text-align: center;
+     width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.progress.blue .progress-bar{
+    border-color: #049dff;
+}
+.progress.blue .progress-value{
+    color: #049dff;
+}
+.progress.blue .progress-left .progress-bar{
+    animation: loading-2 1.5s linear forwards 1.8s;
+}
+.progress.yellow .progress-bar{
+    border-color: #fdba04;
+}
+.progress.yellow .progress-value{
+    color: #fdba04;
+}
+.progress.yellow .progress-left .progress-bar{
+    animation: loading-3 1s linear forwards 1.8s;
+}
+.progress.pink .progress-bar{
+    border-color: #ed687c;
+}
+.progress.pink .progress-value{
+    color: #ed687c;
+}
+.progress.pink .progress-left .progress-bar{
+    animation: loading-4 0.4s linear forwards 1.8s;
+}
+.progress.green .progress-bar{
+    border-color: #1abc9c;
+}
+.progress.green .progress-value{
+    color: #1abc9c;
+}
+.progress.green .progress-left .progress-bar{
+    animation: loading-5 1.2s linear forwards 1.8s;
+}
+@keyframes loading-1{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+@keyframes loading-2{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(144deg);
+        transform: rotate(144deg);
+    }
+}
+@keyframes loading-3{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+@keyframes loading-4{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(36deg);
+        transform: rotate(36deg);
+    }
+}
+@keyframes loading-5{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(126deg);
+        transform: rotate(126deg);
+    }
+}
+@media only screen and (max-width: 990px){
+    .progress{ margin-bottom: 1.041vw; }
+}
